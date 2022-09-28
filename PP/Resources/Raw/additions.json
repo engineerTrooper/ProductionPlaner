@@ -1,0 +1,79 @@
+[
+  {
+    "Id" : "00000001",
+    "Name" : "Improvisierte Leinenbinde +1",
+    "Description" : "none",
+    "Type" : "Construction Plan",
+    "InfoBasedOnType" : "00000009:1;00000010:5;00000011:4;00000006:4"        
+  },
+  {
+    "Id": "00000002",
+    "Name": "Weichpelze",
+    "Description": "none",
+    "Type": "Ingredient",
+    "InfoBasedOnType": ""
+  },
+  {
+    "Id": "00000003",
+    "Name": "Leinen",
+    "Description": "none",
+    "Type": "Ingredient",
+    "InfoBasedOnType": ""
+  },
+  {
+    "Id": "00000004",
+    "Name": "Salz",
+    "Description": "none",
+    "Type": "Ingredient",
+    "InfoBasedOnType": ""
+  },
+  {
+    "Id": "00000005",
+    "Name": "Zwirn",
+    "Description": "none",
+    "Type": "Ingredient",
+    "InfoBasedOnType": ""
+  },
+  {
+    "Id": "00000006",
+    "Name": "Nähgarn",
+    "Description": "none",
+    "Type": "Ingredient",
+    "InfoBasedOnType": ""
+  },
+  {
+    "Id": "00000007",
+    "Name": "Weberei",
+    "Description": "none",
+    "Type": "Facility",
+    "InfoBasedOnType": ""
+  },
+  {
+    "Id": "00000008",
+    "Name": "Gerberei",
+    "Description": "none",
+    "Type": "Facility",
+    "InfoBasedOnType": ""
+  },
+  {
+    "Id": "00000009",
+    "Name": "Werkstatt",
+    "Description": "none",
+    "Type": "Facility",
+    "InfoBasedOnType": ""
+  },
+  {
+    "Id": "00000010",
+    "Name": "Leinentuch",
+    "Description": "none",
+    "Type": "Construction Plan",
+    "InfoBasedOnType": ""
+  },
+  {
+    "Id": "00000011",
+    "Name": "Weichleder",
+    "Description": "none",
+    "Type": "Construction Plan",
+    "InfoBasedOnType": ""
+  }
+]

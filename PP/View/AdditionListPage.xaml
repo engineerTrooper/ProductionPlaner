@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PP.AdditionListPage"
+             xmlns:model="clr-namespace:PP.Model"
+             xmlns:viewmodel="clr-namespace:PP.ViewModel"
+             x:DataType="viewmodel:AdditionListViewModel"
+             Title="Addition List">
+    <VerticalStackLayout>
+
+        <!--<Button
+                Text="Get Additions"
+                Command="{Binding GetAdditionsCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                SemanticProperties.Hint="Counts the number of times you click"
+                HorizontalOptions="Center" />-->
+
+        <RefreshView
+            Grid.ColumnSpan="2"
+            IsRefreshing="{Binding IsRefreshing}">
+            <CollectionView
+                ItemsSource="{Binding Additions}"
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Addition">
+                        <Grid Padding="10">
+                            <Frame HeightRequest="125">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:AdditionListViewModel}}}"
+                                            CommandParameter="{Binding .}"/>
+                                </Frame.GestureRecognizers>
+                                <VerticalStackLayout
+                                        VerticalOptions="Center"
+                                        Padding="10">
+                                    <Label FontSize="12" Text="{Binding Id}" />
+                                    <Label FontSize="12" Text="{Binding Name}" />
+                                    <Label FontSize="12" Text="{Binding Description}" />
+                                    <Label FontSize="12" Text="{Binding Type}" />
+                                </VerticalStackLayout>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </RefreshView>
+
+    </VerticalStackLayout>
+    
+    
+</ContentPage>

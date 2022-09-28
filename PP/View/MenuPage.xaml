@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PP.MenuPage"
+             xmlns:model="clr-namespace:PP.Model"
+             xmlns:viewmodel="clr-namespace:PP.ViewModel"
+             x:DataType="viewmodel:MenuViewModel"
+             Title="Menu Page">
+    <VerticalStackLayout
+        Spacing="12"
+        Padding="8">
+
+        <Label
+                Text="{Binding TemplateTitle}"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+        <Button
+                Text="Addition List"
+                Command="{Binding GoToAdditionListCommand}"
+                IsEnabled="{Binding IsNotBusy}"
+                SemanticProperties.Hint="Counts the number of times you click"
+                HorizontalOptions="Center" />
+
+        <Button
+                Text="Production Shedule"
+            
+                IsEnabled="{Binding IsNotBusy}"
+                SemanticProperties.Hint="Counts the number of times you click"
+                HorizontalOptions="Center" />
+
+
+    </VerticalStackLayout>
+</ContentPage>
