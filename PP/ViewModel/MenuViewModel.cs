@@ -37,6 +37,15 @@ public partial class MenuViewModel : BaseViewModel
         await Shell.Current.GoToAsync(nameof(AdditionListPage));
     }
 
+    [RelayCommand]
+    async Task GoToNotes()
+    {
+        if (IsBusy)
+            return;
+
+        await Shell.Current.GoToAsync(nameof(NotesPage));
+    }
+
 
     //[RelayCommand]
     //async Task GoToMenu()

@@ -31,6 +31,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<PP.View.MainPage>();
 		builder.Services.AddSingleton<PP.MenuPage>();
 		builder.Services.AddSingleton<PP.AdditionListPage>();
+		builder.Services.AddSingleton<PP.NotesPage>();
 
 
         return builder.Build();

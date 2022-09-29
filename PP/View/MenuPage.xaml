@@ -24,8 +24,8 @@
                 HorizontalOptions="Center" />
 
         <Button
-                Text="Production Shedule"
-            
+                Text="Production Notes"
+                Command="{Binding GoToNotesCommand}"
                 IsEnabled="{Binding IsNotBusy}"
                 SemanticProperties.Hint="Counts the number of times you click"
                 HorizontalOptions="Center" />
